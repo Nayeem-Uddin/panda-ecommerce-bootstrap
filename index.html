@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="cs/style.css">
 </head>
 <body>
 
                 <!-- adding the navbar tag -->
 
     <header class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light position">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">
                   <img src="images/logo.png" alt="">
@@ -25,13 +26,13 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Shoes</a>
+                    <a class="nav-link" href="#shoe">Shoes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Backpack</a>
+                    <a class="nav-link" href="#backpack">Backpack</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Subscribe</a>
+                    <a class="nav-link" href="#subscribe" tabindex="-1" aria-disabled="true">Subscribe</a>
                   </li>
                 </ul>
               </div>
@@ -40,12 +41,15 @@
 
              <!-- adding the carousel -->
 
-             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+             <div id="carouselExampleControls" class="carousel slide mt-5 panda-slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <div class="row">
+                    <div class="row d-flex align-items-center p-5">
                         <div class="col-md-7">
-
+                            <h1>Cool Dude Headphone</h1>
+                            <p>This is the best headphone in the world who want to waste their time in front of this funky world</p>
+                            <h1>$420</h1>
+                            <div class="btn btn-warning">Buy Now</div>
                         </div>
                         <div class="col-md-5">
                             <img src="images/banner-images/headphone.png" class="d-block w-100" alt="..."> 
@@ -53,9 +57,11 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="row">
+                    <div class="row d-flex align-items-center p-5">
                         <div class="col-md-7">
-
+                            <h1>Smart TV for sports specially</h1>
+                            <p>Feel the real feeling by watching our TV. we are commited to prive you the best one</p>
+                            <h1>$800</h1>
                         </div>
                         <div class="col-md-5">
                             <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
@@ -63,9 +69,11 @@
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="row">
+                    <div class="row d-flex align-items-center p-5">
                         <div class="col-md-7">
-
+                            <h1>X-Box for your living room</h1>
+                            <p>This is the best x-box in this world who just want to waste their time in front of this fake worlds</p>
+                            <h1>$600</h1>
                         </div>
                         <div class="col-md-5">
                             <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
@@ -88,8 +96,8 @@
                 <!-- adding another main categories -->
 
     <main>
-        <div class="container overflow-hidden mt-5">
-            <div class="row gx-5">
+        <div class="container overflow-hidden mt-5 categories">
+            <div class="row g-5">
               <div class="col">
                <div class="p-3 rounded align-items-center justify-content-evenly bg-success d-flex">
                    <h1 class="text-white">Watch</h1>
@@ -110,7 +118,109 @@
                </div>
             </div>
           </div>
+
+                <!-- adding specific shoes -->
+            <section id="shoe" class="container mt-5">
+                <h3>Choose your Shoes</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card h-100 shadow panda-card">
+                        <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Supply 350</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer panda-footer">
+                          <div class="btn btn-primary">Buy Now >></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 shadow panda-card">
+                        <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Nike 360</h5>
+                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer panda-footer">
+                            <div class="btn btn-primary">Buy Now >></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 shadow panda-card">
+                        <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Red AirMax</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div class="card-footer panda-footer">
+                            <div class="btn btn-primary">Buy Now >></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+
+               <!-- adding specific bags -->
+               <section id="backpack" class="container mt-5">
+                <h3>Choose your Backpack</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card h-100 shadow panda-card">
+                        <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Red Laltu bag</h5>
+                          <h3>$350</h3>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer panda-footer">
+                          <div class="btn btn-primary">Buy Now >></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 shadow panda-card">
+                        <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Blue baltu bag</h5>
+                          <h3>$300</h3>
+                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer panda-footer">
+                            <div class="btn btn-primary">Buy Now >></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100 shadow panda-card">
+                        <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Black kaltu bag</h5>
+                          <h3>$250</h3>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div class="card-footer panda-footer">
+                            <div class="btn btn-primary">Buy Now >></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+
+                <!-- message section -->
+            <section id="subscribe" style="height: 300px;" class="container bg-info d-flex justify-content-center align-items-center mt-5">
+                <div>
+                    <h1>LET'S STAY IN TOUCH</h1>
+                    <h5>get update on sales, special and more</h5>
+                    <input type="text" placeholder="Enter your email address"><br>
+                    <Button class="btn btn-warning">SUBMIT</Button>
+                </div>
+            </section>
     </main>
+    <footer class="container text-center mt-5">
+        <small>@ pandas wesbsite, sofia , Bulgeria</small>
+    </footer>
 
 
     <script src="js/bootstrap.min.js"></script>
